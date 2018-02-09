@@ -11,9 +11,7 @@ Every bulleted point denotes a step.
 To execute this specification, run either:
 
     bundle exec gauge run specs // Default runs with Chrome
-    bundle exec gauge run specs --env="firefox"
-    bundle exec gauge run specs --env="ie"
-
+    
      |username|password            |
      |--------|--------------------|
      |tomsmith|SuperSecretPassword!|
