@@ -5,7 +5,7 @@
 This project focuses on understanding the Gauge framework, not selenium-ruby. Both the Ruby code and the Selenium formatting are left as minimalist and unstructured as possible, hacked together quickly to get it up and running. 
 
 ## Running this example
-The tests are run on Chrome by default.
+The tests are run on Headless Chrome by default.
 
 ### Prerequisites
 
