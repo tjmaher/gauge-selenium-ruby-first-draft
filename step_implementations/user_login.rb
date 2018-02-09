@@ -20,6 +20,6 @@ step 'Login as username <username> and <password>' do |username,password|
   puts "\t* Selecting Login Button."
   driver.find_element(:css,"[type='submit'][class='radius']").click;
   puts "\t* Login Button Pressed (PASS)"
-  sleep(5)
+  sleep(5) # Do not do this in a real project. You are adding five seconds of lag into your framework.
 
 end
