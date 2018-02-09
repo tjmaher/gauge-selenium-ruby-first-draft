@@ -30,7 +30,7 @@ Gauge specs are run with [Maven](http://maven.apache.org/index.html).
 
 Chrome is the default browser for specs execution. Make sure Chrome is installed in your machine and [chromedriver](https://sites.google.com/a/chromium.org/chromedriver/) is in PATH.
 
-### How is this project scaffolded?
+## How is this project scaffolded?
 
 What is wonderful about Gauge is that I did not have to use Yeoman.io or any other tool to scaffold this project, i.e. figure out the folder structure and code just to get things up and running. I created a new directory on my local machine, entered the directory, and entered:
 
@@ -42,6 +42,20 @@ All I had to do was take the Ruby code that Gauge created in [ruby-selenium](htt
 
 I'm only week two into working with Ruby.
 
+## I have Questions!
 
+Are you an expert on Gauge? 
 
+### How do you work with selenium-ruby?
+
+I was planning on working towards what Dave Haefnner has in [ElementalSelenium.com] creating a library of:
+* Using [Base Page Objects](http://elementalselenium.com/tips/9-use-a-base-page-object) to wrap Selenium Ruby calls with proper waits.
+* Using [Page Objects](http://elementalselenium.com/tips/7-use-a-page-object), so that when locators inevitably change, I know where exactly to fix them.
+* Making the [tests data-driven](http://elementalselenium.com/tips/19-data-driven-testing)
+* Adding [Rescue exceptions](http://elementalselenium.com/tips/44-exception-handling) to avoid weeding through Stack traces.
+* Maybe [JQuery Growl for better logging](http://elementalselenium.com/tips/53-growl), and [Wrapped Selenium Tests](http://elementalselenium.com/tips/55-wrapper)
+
+I am brand-new to Gauge and using Selenium-Ruby. So far I only have used Selenium-Java.
+
+It looks like Gauge [strongly advocates against page objects](https://blog.getgauge.io/are-page-objects-anti-pattern-21b6e337880f) calling them an Anti-Pattern. Er... Um... burying a page's locators in code, as they do in the blog makes me worried. Looking for other solutions.
 
