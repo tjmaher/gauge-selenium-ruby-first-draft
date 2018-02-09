@@ -42,9 +42,7 @@ All I had to do was take the Ruby code that Gauge created in [ruby-selenium](htt
 
 I'm only week two into working with Ruby.
 
-## I have Questions!
-
-Are you an expert on Gauge? 
+## Questions: Are you an expert on Gauge? 
 
 ### How do you work with selenium-ruby?
 
@@ -76,13 +74,27 @@ It looks like Gauge [strongly advocates against page objects](https://blog.getga
  ### step_implementation_utils
  * [driver.rb](https://github.com/tjmaher/gauge-selenium-ruby-first-draft/blob/master/step_implementations/utils/driver.rb): Contains the setup and teardown methods, creating the driver and quitting the driver. Also sets up the driver with:
  
- ** options = Selenium::WebDriver::Chrome::Options.new
- ** @@driver = Selenium::WebDriver.for :chrome, options: options
- ** options.add_argument('--headless')
- ** options.add_argument('--disable-gpu')
+ ```
+options = Selenium::WebDriver::Chrome::Options.new
+@@driver = Selenium::WebDriver.for :chrome, options: options
+options.add_argument('--headless')
+options.add_argument('--disable-gpu')
+```
+ * [find_message](https://github.com/tjmaher/gauge-selenium-ruby-first-draft/blob/master/step_implementations/utils/find_messages.rb): Any messages that you need to check for? There is this method that Gauge's ruby-selenium has, "Show a message <message>".
+* [screengrabber.rb](https://github.com/tjmaher/gauge-selenium-ruby-first-draft/blob/master/step_implementations/utils/screengrabber.rb): Provides a wrapper for `driver.save_screenshot('/tmp/screenshot.png')`
  
+* [site_launcher](https://github.com/tjmaher/gauge-selenium-ruby-first-draft/blob/master/step_implementations/utils/site_launcher.rb): Contains the step "Navigate to the login page", which then does:
 
+```driver.navigate.to ENV['APP_URL']
+  assert_equal 'The Internet', driver.title
+  ```
+[Gemfile](https://github.com/tjmaher/gauge-selenium-ruby-first-draft/blob/master/Gemfile): The dependencies for the project. 
 
+* gem 'gauge-ruby'
+* gem 'selenium-webdriver'
+* gem 'test-unit'
+* gem 'chromedriver-helper'
+  
 
 
 
