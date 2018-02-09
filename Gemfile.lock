@@ -1,0 +1,45 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    archive-zip (0.11.0)
+      io-like (~> 0.3.0)
+    ast (2.4.0)
+    childprocess (0.8.0)
+      ffi (~> 1.0, >= 1.0.11)
+    chromedriver-helper (1.2.0)
+      archive-zip (~> 0.10)
+      nokogiri (~> 1.8)
+    ffi (1.9.21-x64-mingw32)
+    gauge-ruby (0.4.2)
+      method_source (~> 0.8.2)
+      os (= 0.9.6)
+      parser (~> 2.3)
+      ruby-protocol-buffers (= 1.5.1)
+    io-like (0.3.0)
+    method_source (0.8.2)
+    mini_portile2 (2.3.0)
+    nokogiri (1.8.2-x64-mingw32)
+      mini_portile2 (~> 2.3.0)
+    os (0.9.6)
+    parser (2.4.0.2)
+      ast (~> 2.3)
+    power_assert (1.1.1)
+    ruby-protocol-buffers (1.5.1)
+    rubyzip (1.2.1)
+    selenium-webdriver (3.9.0)
+      childprocess (~> 0.5)
+      rubyzip (~> 1.2)
+    test-unit (3.2.7)
+      power_assert
+
+PLATFORMS
+  x64-mingw32
+
+DEPENDENCIES
+  chromedriver-helper
+  gauge-ruby
+  selenium-webdriver
+  test-unit
+
+BUNDLED WITH
+   1.16.1

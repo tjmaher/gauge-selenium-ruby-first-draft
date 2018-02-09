@@ -1,0 +1,11 @@
+# Login with unauthorized login credentials
+* Login as username "bad" and "password"
+
+# Check if the user is logged in
+* Show a message "You logged into a secure area!"
+* Give an option to Log Out
+
+# Log out
+* Log out the user
+* Show a message "You logged out of the secure area!"
+* Give an option to Log In
