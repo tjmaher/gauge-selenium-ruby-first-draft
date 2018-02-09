@@ -90,12 +90,12 @@ options.add_argument('--disable-gpu')
 ```driver.navigate.to ENV['APP_URL']
   assert_equal 'The Internet', driver.title
   ```
-[Gemfile](https://github.com/tjmaher/gauge-selenium-ruby-first-draft/blob/master/Gemfile): The dependencies for the project. 
+## [Gemfile](https://github.com/tjmaher/gauge-selenium-ruby-first-draft/blob/master/Gemfile): The dependencies for the project. 
 
-* gem 'gauge-ruby'
-* gem 'selenium-webdriver'
-* gem 'test-unit'
-* gem 'chromedriver-helper'
+* gem ['gauge-ruby'](https://github.com/getgauge/gauge-ruby): The Ruby runner provided by Gauge. 
+* gem ['selenium-webdriver'](https://github.com/SeleniumHQ/selenium/wiki/Ruby-Bindings): The Ruby Gem for the Selenium Ruby Bindings.
+* gem ['test-unit'](https://github.com/test-unit/test-unit): xUnit assertion framework originally by Kent Beck. 
+* gem ['chromedriver-helper'](https://github.com/flavorjones/chromedriver-helper): Written by FlavorJones, for easy installation of Chromedriver.
   
 
 
