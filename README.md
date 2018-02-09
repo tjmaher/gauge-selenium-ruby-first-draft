@@ -59,3 +59,31 @@ I am brand-new to Gauge and using Selenium-Ruby. So far I only have used Seleniu
 
 It looks like Gauge [strongly advocates against page objects](https://blog.getgauge.io/are-page-objects-anti-pattern-21b6e337880f) calling them an Anti-Pattern. Er... Um... burying a page's locators in code, as they do in the blog makes me worried. Looking for other solutions.
 
+## Contents
+
+### env/default:
+* [default properties](https://github.com/tjmaher/gauge-selenium-ruby-first-draft/blob/master/env/default/default.properties): Points to where the reports and logs are, chooses Chrome to be the default browser, and chooses whether or not you should overwrite reports, capture screenshots on failure, enable multithreading. You can also choose when you want the objects to be cleatred... after execution of suite, spec, or scenario. 
+* [user properties](https://github.com/tjmaher/gauge-selenium-ruby-first-draft/blob/master/env/default/user.properties): Points to the APP_URL, and chooses if you want the tests to be headless or not. 
+
+### specs
+* [UserAction.spec](https://github.com/tjmaher/gauge-selenium-ruby-first-draft/blob/master/specs/UserActions.spec): Heavily ripped off of the Gauge sample project, [ruby-selenium](https://github.com/getgauge-examples/ruby-selenium), this is the "executable specification file. This file follows markdown syntax. Every heading in this file denotes a scenario. Every bulleted point denotes a step". Contains "Login as username <username> and <password>", "Check if the user is logged in" and "Log out". Also contains a data table for username and passwords.
+* [concepts/Authentication.cpt](https://github.com/tjmaher/gauge-selenium-ruby-first-draft/blob/master/specs/concepts/Authentication.cpt): Specs can refer to these concepts, "Check if the user is logged in" and "Log out", breaking them down.  
+ 
+ ### step_implementations
+ * [authentication.rb](https://github.com/tjmaher/gauge-selenium-ruby-first-draft/blob/master/step_implementations/authentication.rb): Contains the selenium-ruby code that acts out the steps "Give an option to Log Out", 'Give an option to Log In' and a logout method.
+ * [user_login](https://github.com/tjmaher/gauge-selenium-ruby-first-draft/blob/master/step_implementations/user_login.rb): Contains the step "Login as username <username> and <password>", which uses selenium-ruby to send text to the username and password textbox, and presses the Login button. 
+ 
+ ### step_implementation_utils
+ * [driver.rb](https://github.com/tjmaher/gauge-selenium-ruby-first-draft/blob/master/step_implementations/utils/driver.rb): Contains the setup and teardown methods, creating the driver and quitting the driver. Also sets up the driver with:
+ 
+ ** options = Selenium::WebDriver::Chrome::Options.new
+ ** @@driver = Selenium::WebDriver.for :chrome, options: options
+ ** options.add_argument('--headless')
+ ** options.add_argument('--disable-gpu')
+ 
+
+
+
+
+
+
