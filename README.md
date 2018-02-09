@@ -30,3 +30,16 @@ Gauge specs are run with [Maven](http://maven.apache.org/index.html).
 
 Chrome is the default browser for specs execution. Make sure Chrome is installed in your machine and [chromedriver](https://sites.google.com/a/chromium.org/chromedriver/) is in PATH.
 
+### How is this project scaffolded?
+
+What is wonderful about Gauge is that I did not have to use Yeoman.io or any other tool to scaffold this project, i.e. figure out the folder structure and code just to get things up and running. I created a new directory on my local machine, entered the directory, and entered:
+
+`gauge init ruby`
+
+Want to see what code that command produced? See the [gauge_0.9.7_default_code](https://github.com/tjmaher/gauge_0.9.7_default_code) that I stored on GitHub. 
+
+All I had to do was take the Ruby code that Gauge created in [ruby-selenium](https://github.com/getgauge-examples/ruby-selenium), and hack on it inexpertly until it could run the [The-Internet Login](https://the-internet.herokuapp.com/login). I'm only week two into working with Ruby.
+
+
+
+
