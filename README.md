@@ -48,7 +48,7 @@ Are you an expert on Gauge?
 
 ### How do you work with selenium-ruby?
 
-I was planning on working towards what Dave Haefnner has in [ElementalSelenium.com](http://elementalselenium) creating a library of:
+I was planning on working towards what Dave Haeffner has in [ElementalSelenium.com](http://elementalselenium) creating a library of:
 * Using [Base Page Objects](http://elementalselenium.com/tips/9-use-a-base-page-object) to wrap Selenium Ruby calls with proper waits.
 * Using [Page Objects](http://elementalselenium.com/tips/7-use-a-page-object), so that when locators inevitably change, I know where exactly to fix them.
 * Making the [tests data-driven](http://elementalselenium.com/tips/19-data-driven-testing)
