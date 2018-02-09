@@ -38,7 +38,9 @@ What is wonderful about Gauge is that I did not have to use Yeoman.io or any oth
 
 Want to see what code that command produced? See the [gauge_0.9.7_default_code](https://github.com/tjmaher/gauge_0.9.7_default_code) that I stored on GitHub. 
 
-All I had to do was take the Ruby code that Gauge created in [ruby-selenium](https://github.com/getgauge-examples/ruby-selenium), and hack on it inexpertly until it could run the [The-Internet Login](https://the-internet.herokuapp.com/login). I'm only week two into working with Ruby.
+All I had to do was take the Ruby code that Gauge created in [ruby-selenium](https://github.com/getgauge-examples/ruby-selenium), and hack on it inexpertly until it could run the [The-Internet Login](https://the-internet.herokuapp.com/login). 
+
+I'm only week two into working with Ruby.
 
 
 
