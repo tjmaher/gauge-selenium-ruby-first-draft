@@ -2,6 +2,8 @@
 
 [T.J. Maher](http://tjmaher.com)'s first attempt using [Gauge.org](http://gauge.org) + [Selenium-Ruby](https://github.com/SeleniumHQ/selenium/wiki/Ruby-Bindings), ripping off code from Gauge's example project, [ruby-selenium](https://github.com/getgauge-examples/ruby-selenium) so he can attempt to understand this BDD framework he is encountering for the first time. 
 
+T.J. Maher knows how to write Base Page Objects, Page Objects, making tests data driven, and how to add good exception handling and logging in Java, but not in Ruby. Do you know that? Maybe you can help [answer a few questions](https://github.com/tjmaher/gauge-selenium-ruby-first-draft#questions-are-you-an-expert-on-gauge).
+
 This project focuses on understanding the Gauge framework, not selenium-ruby. Both the Ruby code and the Selenium formatting are left as minimalist and unstructured as possible, hacked together quickly to get it up and running. 
 
 ## Running this example
